@@ -19,6 +19,15 @@ const feeling = (state = 0, action) => {
     return state //returns state default value
 }
 
+const understanding = (state = 0, action) => {
+    if (action.type === 'SET_UNDERSTANDING') {
+        return action.payload;
+    } else if (action.type === 'CLEAR_ALL') {
+        return '';
+    }
+    return state //returns state default value
+}
+
 
 // Redux store
 // Redux store! Keeps track of all reducers
@@ -27,7 +36,7 @@ const storeInstance = createStore(
     combineReducers(
         {
             feeling,
-            // understanding,
+            understanding,
             // support,
             // comments,
             // flagged,
