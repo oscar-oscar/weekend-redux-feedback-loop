@@ -97,20 +97,31 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
 
 
 Redux multi page feedback form
-## Feeling Componnent
+## Component Header 
 - [] create `Header` component
     - [] move existing header display from App.jsx to component
-## Feeling Componnent
+## Component Feeling 
 - [x] create COMPONENT for `Feeling`  (page 1)
     - [x] needs input field limit to 0-5
     - [x]  H3 : "How are you feeling?"
     - [x] below H3 add short explanation
     - [x] "Next" button 
-## Feeling Redux
+## Redux Feeling 
 - [x] create reducer for `feeling` 
     `SET_FEELING` state = 0, {return action.payload}
 - [x] save entry in 'feeling' reducer on click 'next' 
-- [x] create Router in App.jsx and create ROUTE for page 1.
+- [x] create Router in App.jsx and create ROUTE for page 1 exact path= `/`.
 - repeat aboe stepes for pages 1-4
 
+## Redux Understanding (page2) 
+- [] create reducer for `understanding` 
+    `SET_UNDERSTANDING` state = 0, {return action.payload}
+- [] save entry in 'understanding' reducer on click 'next' 
+- [] create Router in App.jsx and create ROUTE for page 2 exact path= `/understanding`
 
+## Component Understanding 
+- [] create COMPONENT for `Understanding`  (page 1)
+    - [] needs input field limit to 0-5
+    - []  H3 : "How well are you understanding the content?"
+    - [] below H3 add short explanation
+    - [] "Next" button 

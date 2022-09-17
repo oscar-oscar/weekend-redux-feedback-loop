@@ -18,7 +18,7 @@ const Feeling = () => {
             <p> Choose between 0 - 5.
                 <br />
                 <br />
-                0 = feeling bad. 5 = feeling great!</p>
+                0 = Feeling down. 5 = Feeling great!</p>
             <div>
                 {/* Step 3: getter/setter 
             getter: {feeling} setter {handleChange} */}
