@@ -78,3 +78,28 @@ Improve the styling of the app using Material-UI. This might include cards, snac
 
 ### DEPLOY
 Deploy your project to Heroku. You'll need to read the special instructions for building and deploying with React. 
+
+
+### task list
+
+- [x] setup db
+- [x] create server side router.js file
+- [x] create `feedback` express route
+- [x] start up servers
+- [x] install redux
+- [x] install redux logger
+- [x] create `GET` route in router.js file
+- [x] create `POST` route in router.js file
+- [x] import PROVIDER and createStore, comebineReducsers, applymiddleware
+- [] apply middware(logger)
+- [] create Redux Store to house reducers (const storeInstance)
+
+
+
+Redux multi page feedback form
+- [] create COMPONENT for `Feeling`  (page 1)
+- [] create reducer for 'feeling'
+- [] save entry in 'feeling' reducer on click 'next' 
+- [] create Router in App.jsx and create ROUTE for page 1.
+- repeat aboe stepes for pages 1-4
+
