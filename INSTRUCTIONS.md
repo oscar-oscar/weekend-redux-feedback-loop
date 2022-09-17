@@ -100,28 +100,43 @@ Redux multi page feedback form
 ## Component Header 
 - [] create `Header` component
     - [] move existing header display from App.jsx to component
-## Component Feeling 
-- [x] create COMPONENT for `Feeling`  (page 1)
-    - [x] needs input field limit to 0-5
-    - [x]  H3 : "How are you feeling?"
-    - [x] below H3 add short explanation
-    - [x] "Next" button 
-## Redux Feeling 
+
+## Redux for "Feeling " 
 - [x] create reducer for `feeling` 
     `SET_FEELING` state = 0, {return action.payload}
 - [x] save entry in 'feeling' reducer on click 'next' 
 - [x] create Router in App.jsx and create ROUTE for page 1 exact path= `/`.
 - repeat aboe stepes for pages 1-4
 
-## Redux Understanding (page2) 
-- [] create reducer for `understanding` 
-    `SET_UNDERSTANDING` state = 0, {return action.payload}
-- [] save entry in 'understanding' reducer on click 'next' 
-- [] create Router in App.jsx and create ROUTE for page 2 exact path= `/understanding`
+## Component for "Feeling " (page 1)
+- [x] create COMPONENT for `Feeling`  (page 1)
+    - [x] needs input field limit to 0-5
+    - [x]  H3 : "How are you feeling?"
+    - [x] below H3 add short explanation
+    - [x] "Next" button navigates to next question
 
-## Component Understanding 
-- [] create COMPONENT for `Understanding`  (page 1)
-    - [] needs input field limit to 0-5
-    - []  H3 : "How well are you understanding the content?"
-    - [] below H3 add short explanation
-    - [] "Next" button 
+## Redux for "Understanding "(page2) 
+- [x] create reducer for `understanding` 
+    `SET_UNDERSTANDING` state = 0, {return action.payload}
+- [x] save entry in 'understanding' reducer on click 'next' 
+- [x] create Router in App.jsx and create ROUTE for page 2 exact path= `/understanding`
+
+## Component for "Understanding "
+- [x] create COMPONENT for `Understanding`  (page 2)
+    - [x] needs input field limit to 0-5
+    - [x]  H3 : "How well are you understanding the content?"
+    - [x] below H3 add short explanation
+    - [x] "Next" button navigates to next question
+
+    ## Redux for "Support" 
+- [x] create reducer for `support` 
+    `SET_SUPPORT` state = 0, {return action.payload}
+- [x] save entry in 'understanding' reducer on click 'next' 
+- [x] create Router in App.jsx and create ROUTE for page 2 exact path= `/understanding`
+
+## Component for "Supported" (page3) 
+- [x] create COMPONENT for `Support`  (page 3)
+    - [x] needs input field limit to 0-5
+    - [x]  H3 : "How well are you understanding the content?"
+    - [x] below H3 add short explanation
+    - [x] "Next" button navigates to next question
