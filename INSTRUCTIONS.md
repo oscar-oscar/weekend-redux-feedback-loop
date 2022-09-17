@@ -131,7 +131,7 @@ Redux multi page feedback form
     ## Redux for "Support" 
 - [x] create reducer for `support` 
     `SET_SUPPORT` state = 0, {return action.payload}
-- [x] save entry in 'understanding' reducer on click 'next' 
+- [x] save entry in 'support' reducer on click 'next' 
 - [x] create Router in App.jsx and create ROUTE for page 2 exact path= `/understanding`
 
 ## Component for "Supported" (page3) 
@@ -140,3 +140,15 @@ Redux multi page feedback form
     - [x]  H3 : "How well are you understanding the content?"
     - [x] below H3 add short explanation
     - [x] "Next" button navigates to next question
+
+       ## Redux for "Comments" 
+- [x] create reducer for `comments` 
+    `SET_COMMENTS` state = 0, {return action.payload}
+- [] save entry in 'comments' reducer on click 'next' 
+- [] create Router in App.jsx and create ROUTE for page 2 exact path= `/understanding`
+
+## Component for "Comments" (page4) 
+- [] create COMPONENT for `Comments`  (page 4)
+    - [] create input field for comments
+    - []  H3 : "Any comments you want to leave?" 
+    - [] "Next" button navigates to review page
