@@ -91,15 +91,25 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
 - [x] create `GET` route in router.js file
 - [x] create `POST` route in router.js file
 - [x] import PROVIDER and createStore, comebineReducsers, applymiddleware
-- [] apply middware(logger)
-- [] create Redux Store to house reducers (const storeInstance)
+- [x] apply middware(logger)
+- [x] create Redux Store to house reducers (const storeInstance)
 
 
 
 Redux multi page feedback form
+## Feeling Componnent
+- [] create `Header` component
+    - [] move existing header display from App.jsx to component
+## Feeling Componnent
 - [] create COMPONENT for `Feeling`  (page 1)
-- [] create reducer for 'feeling'
+    - [] needs input field limit to 0-5
+    - [] H1 : "How are you feeling?"
+    - [] "Next" button 
+## Feeling Redux
+- [] create reducer for `feeling` 
+    `SET_FEELING` state = 0, {return action.payload}
 - [] save entry in 'feeling' reducer on click 'next' 
 - [] create Router in App.jsx and create ROUTE for page 1.
 - repeat aboe stepes for pages 1-4
+
 
