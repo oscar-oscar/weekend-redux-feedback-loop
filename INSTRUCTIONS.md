@@ -148,7 +148,7 @@ Redux multi page feedback form
 - [] create Router in App.jsx and create ROUTE for page 2 exact path= `/understanding`
 
 ## Component for "Comments" (page4) 
-- [] create COMPONENT for `Comments`  (page 4)
-    - [] create input field for comments
-    - []  H3 : "Any comments you want to leave?" 
-    - [] "Next" button navigates to review page
+- [x] create COMPONENT for `Comments`  (page 4)
+    - [x] create input field for comments
+    - [x]  H3 : "Any comments you want to leave?" 
+    - [x] "Next" button navigates to review page
