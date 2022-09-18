@@ -4,26 +4,26 @@ import { useHistory } from 'react-router-dom';//allows us to navigate to another
 // Step 1:  setup imports above
 
 const Feeling = () => {
-    const handleKeyDown = event => {
-        if (event.key === '0') {
-            return e.preventDefault();
-        } else if (event.key === '1') {
-            return e.preventDefault();
-        }else if (event.key === '2') {
-            return e.preventDefault();
-        }else if (event.key === '3') {
-            return e.preventDefault();
-        }else if (event.key === '4') {
-            return e.preventDefault();
-        }else if (event.key === '5') {
-            return e.preventDefault();
-        }else
-        return alert('only choose 0-5') ;
-    //     if (event.key > 5 ) {
-    //       e.preventDefault();
-    //     }else if (event.key ===)
-    //   };
-    }
+    // const handleKeyDown = event => {
+    //     if (event.key === '0') {
+    //         return e.preventDefault();
+    //     } else if (event.key === '1') {
+    //         return e.preventDefault();
+    //     }else if (event.key === '2') {
+    //         return e.preventDefault();
+    //     }else if (event.key === '3') {
+    //         return e.preventDefault();
+    //     }else if (event.key === '4') {
+    //         return e.preventDefault();
+    //     }else if (event.key === '5') {
+    //         return e.preventDefault();
+    //     }else
+    //     return alert('only choose 0-5') ;
+    // //     if (event.key > 5 ) {
+    // //       e.preventDefault();
+    // //     }else if (event.key ===)
+    // //   };
+    // }
       
     
     const history = useHistory();
