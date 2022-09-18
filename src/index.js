@@ -56,8 +56,7 @@ const storeInstance = createStore(
             understanding,
             support,
             comments,
-            // flagged,
-            // date,
+           
         }
     ),
 

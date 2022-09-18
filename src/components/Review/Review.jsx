@@ -16,7 +16,7 @@ const Review = () => {
         axios({
             method: 'POST',
             url: '/feedback',
-            data: {
+            data: { 
                 feeling: feeling,
                 understanding: understanding,
                 support: support,
@@ -27,14 +27,14 @@ const Review = () => {
             //clear all reducers
             dispatch({ type: 'CLEAR_ALL' });
             // Navigate to "/" for new survey
-            history.push('/');
+            history.push('/success');
         }).catch((error) => {
             console.log(error);
             alert('something went wrong in axios Submit')
         })
     }
 
-    return ( //display score
+    return ( //display scores
         <>
             <h2>Survery Review</h2>
             <div>

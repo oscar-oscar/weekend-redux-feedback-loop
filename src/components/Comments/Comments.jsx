@@ -13,7 +13,7 @@ const Comments = () => {
         <>
             <h3>Are there any comments you want to leave?</h3>
             <p> enter comments below </p>
-            <div class="comment-area">
+            <div className="comment-area">
             <input value={comments} onChange={handleChange} className="comments" placeholder="enter comment here" type="text" />
                 <button onClick={() => history.push('/review')} className="button">Next</button>
             </div>
