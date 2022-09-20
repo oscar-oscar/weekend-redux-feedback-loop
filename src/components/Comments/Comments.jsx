@@ -1,5 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import Stack from '@mui/material/Stack';
+import { TextField } from '@mui/material';
+import Container from '@mui/material/Container';
+import ProgressBar from '../ProgressBar/ProgressBar';
+
 
 const Comments = () => {
     const history = useHistory();
@@ -11,16 +16,27 @@ const Comments = () => {
 
     return (
         <>
+            <ProgressBar step={5} />
             <h3>Are there any comments you want to leave?</h3>
             <p> enter comments below </p>
-            <div className="comment-area">
-            <input value={comments} onChange={handleChange} className="comments" placeholder="enter comment here" type="text" />
-                <button onClick={() => history.push('/review')} className="button">Next</button>
+            <div>
+                <Container maxWidth="sm">
+                    <Stack spacing={3}>
+                        <TextField sx={{ width: '50ch' }}
+                            id="outlined-multiline-flexible"
+                            label="Comment here"
+                            multiline
+                            maxRows={3}
+                            value={comments}
+                            onChange={handleChange}
+                        />
+                        <button onClick={() => history.push('/review')} className="reviewButton">Next</button>
+                    </Stack>
+                </Container>
             </div>
-
-
         </>
     )
 }
 
 export default Comments;
+

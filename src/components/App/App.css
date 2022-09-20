@@ -66,9 +66,23 @@ h4 {
   line-break: strict 10px;
  
 }
+.styles.formControlLabel{
+  color:crimson;
+}
 
 
-
-
+.reviewButton{
+  width: 25%;
+  border: 2px solid #2958B3;
+  color: #2958B3;
+  padding: 16px 32px;
+  margin: 0px 50px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  vertical-align: top;
+}
   
 

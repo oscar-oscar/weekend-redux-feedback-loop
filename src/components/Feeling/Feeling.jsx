@@ -1,31 +1,19 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';//allows us to navigate to another page
+import * as React from 'react';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
+import Stack from '@mui/material/Stack';
+import { Typography } from '@mui/material';
+import ProgressBar from '../ProgressBar/ProgressBar';
+
 
 // Step 1:  setup imports above
 
 const Feeling = () => {
-    // const handleKeyDown = event => {
-    //     if (event.key === '0') {
-    //         return e.preventDefault();
-    //     } else if (event.key === '1') {
-    //         return e.preventDefault();
-    //     }else if (event.key === '2') {
-    //         return e.preventDefault();
-    //     }else if (event.key === '3') {
-    //         return e.preventDefault();
-    //     }else if (event.key === '4') {
-    //         return e.preventDefault();
-    //     }else if (event.key === '5') {
-    //         return e.preventDefault();
-    //     }else
-    //     return alert('only choose 0-5') ;
-    // //     if (event.key > 5 ) {
-    // //       e.preventDefault();
-    // //     }else if (event.key ===)
-    // //   };
-    // }
-      
-    
     const history = useHistory();
     // Step 2: setup useSelector and useDispatch
     const feeling = useSelector(store => store.feeling); // calling reducer
@@ -36,17 +24,32 @@ const Feeling = () => {
 
     return (
         <>
-            <h3>How are you feeling?</h3>
-            <p> Choose between 0 - 5.
-                <br />
-                <br />
-                0 = Feeling down. 5 = Feeling great!</p>
+            <ProgressBar step={1} />
+            <h2>How are you feeling about today's material?</h2>
+
             <div>
                 {/* Step 3: getter/setter 
             getter: {feeling} setter {handleChange} */}
-                <input value={feeling} onChange={handleChange} className="input" type="number"  min={0} max={5} />
-                
-                <button onClick={() => history.push('/understanding')} className="button">Next</button>
+
+                <FormControl>
+                    <Stack spacing={3}>
+                        <FormLabel id="demo-controlled-radio-buttons-group" sx={{ color: "#033076", fontSize: "1.5rem" }}> Rate on scale from 0-5</FormLabel>
+                        <RadioGroup
+                            aria-labelledby="demo-controlled-radio-buttons-group"
+                            name="controlled-radio-buttons-group"
+                            value={feeling}
+                            onChange={handleChange}
+                        >
+                            <FormControlLabel value="0" control={<Radio />} label={<Typography variant='h5'>Level 0 - Not at all confident</Typography>} />
+                            <FormControlLabel value="1" control={<Radio />} label={<Typography variant='h5'>Level 1</Typography>} />
+                            <FormControlLabel value="2" control={<Radio />} label={<Typography variant='h5'>Level 2</Typography>} />
+                            <FormControlLabel value="3" control={<Radio />} label={<Typography variant='h5'>Level 3</Typography>} />
+                            <FormControlLabel value="4" control={<Radio />} label={<Typography variant='h5'>Level 4</Typography>} />
+                            <FormControlLabel value="5" control={<Radio />} label={<Typography variant='h5'>Level 5 - Extremely confident</Typography>} />
+                        </RadioGroup>
+                        <button onClick={() => history.push('/understanding')} className="button">Next</button>
+                    </Stack>
+                </FormControl>
             </div>
         </>
     )
